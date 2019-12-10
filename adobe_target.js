@@ -455,7 +455,7 @@ var PersadoCode = (function () { // Persado namescape to ensure no conflict with
 
 // Customer details (can be the same across campaigns)
 var per_platformUsed = "Adobe"; // Which platform is this script for. Options are "Adobe","Optimizely","Maxymiser","GoogleOptimize"
-var per_AdobeAnalyticsTemplate = "persadotemplate"; // Adobe Analytics template name
+var per_AdobeAnalyticsTemplate = "persadoexchangepartn"; // Adobe Analytics template name
 var per_AdobeAnalyticsEvar = "eVar4"; // Adobe Analytics eVar for tracking variants across pages (i.e. eVar4)
 var per_AdobeAnalyticsListVar = ""; // Adobe Analytics list var for tracking variants across pages (i.e. list1) - Have either eVar or ListVar or Context
 var per_AdobeAnalyticsContext = ""; // Adobe Analytics context variable to be written - Have either eVar or ListVar or Context
