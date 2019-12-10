@@ -477,9 +477,9 @@ var per_snowplow = false; // Track with Snowplow
 // Campaign specific details
 var per_campaign_ID = "285_Omf4SEMc32"; // Campaign ID provided by Persado
 var per_phase_ID = "exploration"; // Set a name for the current phase as provided by Persado
-var per_touchpoint_elements = ["div#to-hide"]; // Page elements to wait to load (or "" if none)
+var per_touchpoint_elements = "div#to-hide"; // Page elements to wait to load (or "" if none)
 var per_touchpoint_elements_unhide = [""]; // Page elements to unhide (or "" if none)
-var per_touchpoint_name = ""; // Touchpoint names corresping to elements
+var per_touchpoint_name = "body"; // Touchpoint names corresping to elements
 var per_unhide_elements = true; // Whether to unhide elements or just not (in case we never hide them in the first place using Adobe Target)
 
 // Persado configuration details [change only if needed]
