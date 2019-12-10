@@ -456,7 +456,7 @@ var PersadoCode = (function () { // Persado namescape to ensure no conflict with
 // Customer details (can be the same across campaigns)
 var per_platformUsed = "Adobe"; // Which platform is this script for. Options are "Adobe","Optimizely","Maxymiser","GoogleOptimize"
 var per_AdobeAnalyticsTemplate = "persadoexchangepartn"; // Adobe Analytics template name
-var per_AdobeAnalyticsEvar = "eVar4"; // Adobe Analytics eVar for tracking variants across pages (i.e. eVar4)
+var per_AdobeAnalyticsEvar = ""; // Adobe Analytics eVar for tracking variants across pages (i.e. eVar4)
 var per_AdobeAnalyticsListVar = ""; // Adobe Analytics list var for tracking variants across pages (i.e. list1) - Have either eVar or ListVar or Context
 var per_AdobeAnalyticsContext = ""; // Adobe Analytics context variable to be written - Have either eVar or ListVar or Context
 var per_AdobeViewEvent = ""; // Adobe event to track our views (i.e. event19)
@@ -469,17 +469,17 @@ var per_GA_ID = ""; // Google Analytics customer ID
 var per_GA_dimname = ""; // Custom dimension for Google Analytics (i.e. dimension1)
 var per_GAViewEvent = ""; // GA event to track our views (i.e metric1)
 var per_GA_type = 1; // 1 for GA and 2 for GTAG
-var per_snowplow_clicks = ["div.section_btn a","div.section_sub_btn button"]; // Elements to be tracked for clicks only for Snowplow
-var per_AdobeAnalyticsUse = true; // Track with Analytics
+var per_snowplow_clicks = ""; // Elements to be tracked for clicks only for Snowplow
+var per_AdobeAnalyticsUse = false; // Track with Analytics
 var per_GAuse = false; // Track with Google Analytics
 var per_snowplow = false; // Track with Snowplow
 
 // Campaign specific details
 var per_campaign_ID = "285_Omf4SEMc32"; // Campaign ID provided by Persado
 var per_phase_ID = "exploration"; // Set a name for the current phase as provided by Persado
-var per_touchpoint_elements = [""]; // Page elements to wait to load (or "" if none)
+var per_touchpoint_elements = ["div#to-hide"]; // Page elements to wait to load (or "" if none)
 var per_touchpoint_elements_unhide = [""]; // Page elements to unhide (or "" if none)
-var per_touchpoint_name = "cta"; // Touchpoint names corresping to elements
+var per_touchpoint_name = ""; // Touchpoint names corresping to elements
 var per_unhide_elements = true; // Whether to unhide elements or just not (in case we never hide them in the first place using Adobe Target)
 
 // Persado configuration details [change only if needed]
